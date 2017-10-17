@@ -4,8 +4,7 @@ const app = express();
 const _ = require('lodash');
 
 app.get('/', (req, res) => {
-  // landing page or redirect maybe
-  res.sendStatus(200);
+  res.redirect('https://github.com/prichey/lowdap');
 });
 
 app.get('/:fn/:params', (req, res) => {
